@@ -1,0 +1,77 @@
+/* BASE Styles */
+
+* {
+    font-size: 10px;
+}
+
+:root {
+    --main-bg: hsl(212, 45%, 89%);
+    --card-bg: hsl(0, 0%, 100%);
+    --txt-head: hsl(218, 44%, 22%);
+    --txt-para: hsl(220, 15%, 55%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LAYOUT Styles */
+
+.card {
+    width: 320px;
+    height: 500px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__img {
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.card__txt {
+    width: 290px;
+    height: 130px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__txt--head {
+    color: var(--txt-head);
+    font-size: 2.2rem;
+    text-align: center;
+    width: 290px;
+    height: 55px;
+}
+
+.card__txt--para {
+    color: var(--txt-para);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 255px;
+    height: 55px;
+}
+
+/* Required Attribution Styles */
+
+.attribution {
+    font-size: 1.1rem; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
